@@ -1,0 +1,9 @@
+pool:
+  vmImage: 'ubuntu-20.04'
+
+steps:
+  - script: ./bootstrap
+    displayName: 'Bootstrap source'
+
+  - script: make
+    displayName: 'Run build'
