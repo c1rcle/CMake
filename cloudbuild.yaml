@@ -1,0 +1,6 @@
+steps:
+  - name: gcr.io/$PROJECT_ID/make
+    args: ["bootstrap"]
+  - name: gcr.io/$PROJECT_ID/make
+    args: ["-c", "make"]
+timeout: 3600s
